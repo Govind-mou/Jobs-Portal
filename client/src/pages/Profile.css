@@ -1,0 +1,128 @@
+/* =========================
+   PROFILE PAGE
+========================= */
+
+.profile-page {
+  padding: 40px;
+  max-width: 1000px;
+  margin: auto;
+  background: #f4f7fc;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Card */
+.profile-card {
+  width: 100%;
+  max-width: 700px;
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+.profile-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  background: #4f46e5;
+  color: white;
+  font-size: 32px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.profile-header h1 {
+  font-size: 24px;
+  color: #111827;
+}
+
+.profile-header p {
+  color: #6b7280;
+}
+
+/* Form */
+.profile-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #374151;
+}
+
+/* Inputs */
+.profile-card input,
+.profile-card textarea {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: 0.3s;
+  outline: none;
+}
+
+.profile-card input:focus,
+.profile-card textarea:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+}
+
+/* Textarea */
+.profile-card textarea {
+  resize: none;
+}
+
+/* Save Button */
+.save-btn {
+  background: #4f46e5;
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: 0.3s;
+  border: none;
+}
+
+.save-btn:hover {
+  background: #3730a3;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .profile-page {
+    padding: 20px;
+  }
+
+  .profile-card {
+    padding: 20px;
+  }
+
+  .profile-header h1 {
+    font-size: 20px;
+  }
+}

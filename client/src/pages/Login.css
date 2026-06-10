@@ -1,0 +1,294 @@
+/* =========================
+   LOGIN PAGE
+========================= */
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background: linear-gradient(
+    135deg,
+    #0f172a,
+    #1e293b,
+    #312e81
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background Glow */
+
+.login-page::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: #8b5cf6;
+  filter: blur(180px);
+  opacity: 0.25;
+  top: -150px;
+  left: -150px;
+}
+
+.login-page::after {
+  content: "";
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  background: #06b6d4;
+  filter: blur(180px);
+  opacity: 0.2;
+  bottom: -120px;
+  right: -120px;
+}
+
+/* =========================
+   LOGIN CARD
+========================= */
+
+.login-card {
+  width: 100%;
+  max-width: 450px;
+  position: relative;
+  z-index: 2;
+
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255,255,255,0.15);
+
+  padding: 35px;
+  border-radius: 24px;
+
+  box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+
+  animation: fadeUp .5s ease;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.login-card h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 800;
+
+  background: linear-gradient(
+    90deg,
+    #38bdf8,
+    #8b5cf6,
+    #ec4899
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  margin-bottom: 10px;
+}
+
+.login-card p {
+  text-align: center;
+  color: #cbd5e1;
+  margin-bottom: 25px;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+.login-card input {
+  padding: 14px 16px;
+
+  border-radius: 14px;
+  border: 2px solid rgba(255,255,255,.1);
+
+  background: rgba(255,255,255,.06);
+
+  color: white;
+  font-size: 15px;
+
+  transition: .3s;
+}
+
+.login-card input::placeholder {
+  color: #94a3b8;
+}
+
+.login-card input:focus {
+  border-color: #8b5cf6;
+  box-shadow: 0 0 20px rgba(139,92,246,.3);
+}
+
+/* =========================
+   CHECKBOX
+========================= */
+
+.login-card label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #e2e8f0;
+  font-size: 14px;
+}
+
+.login-card input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.login-card button {
+  margin-top: 10px;
+
+  padding: 14px;
+
+  border: none;
+  border-radius: 14px;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  color: white;
+
+  background: linear-gradient(
+    135deg,
+    #06b6d4,
+    #8b5cf6,
+    #ec4899
+  );
+
+  cursor: pointer;
+  transition: .3s;
+}
+
+.login-card button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 15px 30px rgba(139,92,246,.3);
+}
+
+.login-card button:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+.login-links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.login-links a {
+  color: #38bdf8;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.login-links a:hover {
+  color: #8b5cf6;
+}
+
+.login-links p {
+  color: #94a3b8;
+  margin-top: 12px;
+}
+
+/* =========================
+   DIVIDER
+========================= */
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0;
+  color: #94a3b8;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: rgba(255,255,255,.1);
+}
+
+/* =========================
+   SOCIAL LOGIN
+========================= */
+
+.social-login {
+  display: flex;
+  gap: 10px;
+}
+
+.social-login button {
+  flex: 1;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.1);
+  color: white;
+}
+
+.social-login button:hover {
+  background: rgba(255,255,255,.15);
+}
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 480px) {
+
+  .login-page {
+    padding: 20px;
+  }
+
+  .login-card {
+    padding: 25px;
+  }
+
+  .login-card h1 {
+    font-size: 26px;
+  }
+
+  .social-login {
+    flex-direction: column;
+  }
+}

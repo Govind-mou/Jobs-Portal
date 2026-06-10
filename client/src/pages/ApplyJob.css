@@ -1,0 +1,210 @@
+/* =========================
+   APPLY JOB PAGE
+========================= */
+
+.apply-job {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: linear-gradient(
+    135deg,
+    #0f172a,
+    #1e293b,
+    #312e81
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* PAGE TITLE */
+
+.apply-job h1 {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #f59e0b;
+  text-shadow: 0 3px 10px rgba(245, 158, 11, 0.4);
+}
+
+/* SUBTITLE */
+
+.apply-job > p {
+  color: #cbd5e1;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+/* SUCCESS MESSAGE */
+
+.apply-job .success {
+  width: 100%;
+  max-width: 600px;
+  background: linear-gradient(
+    135deg,
+    #22c55e,
+    #15803d
+  );
+  color: white;
+  padding: 14px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* FORM */
+
+.apply-job form {
+  width: 100%;
+  max-width: 650px;
+  background: rgba(30, 41, 59, 0.95);
+  backdrop-filter: blur(15px);
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+/* LABELS */
+
+.apply-job label {
+  display: block;
+  margin-bottom: 6px;
+  margin-top: 15px;
+  font-weight: 700;
+  color: #38bdf8;
+}
+
+/* INPUTS */
+
+.apply-job input,
+.apply-job textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: 2px solid #334155;
+  background: #0f172a;
+  color: white;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+/* PLACEHOLDER */
+
+.apply-job input::placeholder,
+.apply-job textarea::placeholder {
+  color: #94a3b8;
+}
+
+/* FOCUS */
+
+.apply-job input:focus,
+.apply-job textarea:focus {
+  border-color: #8b5cf6;
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.3);
+}
+
+/* FILE INPUT */
+
+.apply-job input[type="file"] {
+  background: #111827;
+  border: 2px dashed #06b6d4;
+  padding: 15px;
+  cursor: pointer;
+}
+
+/* RESUME INFO */
+
+.resume-info {
+  margin-top: 10px;
+  color: #10b981;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* TEXTAREA */
+
+.apply-job textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+/* BUTTON */
+
+.apply-job button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 15px;
+  border: none;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(
+    135deg,
+    #8b5cf6,
+    #2563eb
+  );
+  transition: all 0.3s ease;
+}
+
+/* BUTTON HOVER */
+
+.apply-job button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(139, 92, 246, 0.4);
+}
+
+/* DISABLED BUTTON */
+
+.apply-job button:disabled {
+  background: #64748b;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+/* FORM SECTIONS */
+
+.form-section {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 12px;
+  background: rgba(15, 23, 42, 0.5);
+}
+
+/* SECTION HEADINGS */
+
+.form-section h3 {
+  color: #f59e0b;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+/* REQUIRED FIELD */
+
+.required {
+  color: #ef4444;
+  margin-left: 4px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .apply-job {
+    padding: 20px 15px;
+  }
+
+  .apply-job h1 {
+    font-size: 30px;
+  }
+
+  .apply-job form {
+    padding: 20px;
+  }
+
+  .apply-job button {
+    font-size: 15px;
+  }
+}

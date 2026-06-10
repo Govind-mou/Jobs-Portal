@@ -1,0 +1,262 @@
+/* =========================
+   JOB DETAILS PAGE
+========================= */
+
+.job-details {
+  min-height: 100vh;
+  padding: 40px;
+  max-width: 1100px;
+  margin: auto;
+  background: linear-gradient(
+    135deg,
+    #dbeafe,
+    #ede9fe,
+    #fce7f3
+  );
+}
+
+/* =========================
+   HEADER CARD
+========================= */
+
+.job-header {
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 24px;
+  border-left: 6px solid #2563eb;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  margin-bottom: 25px;
+}
+
+.job-header h1 {
+  font-size: 34px;
+  color: #1d4ed8;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.job-header h3 {
+  color: #7c3aed;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.job-header p {
+  color: #475569;
+  font-size: 15px;
+}
+
+/* =========================
+   JOB INFO
+========================= */
+
+.job-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.job-info p {
+  flex: 1;
+  min-width: 220px;
+  padding: 15px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+/* Different Colors */
+
+.job-info p:nth-child(1) {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.job-info p:nth-child(2) {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.job-info p:nth-child(3) {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.job-info p:nth-child(4) {
+  background: #fce7f3;
+  color: #db2777;
+}
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.job-description {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  border-top: 5px solid #8b5cf6;
+}
+
+.job-description h2 {
+  color: #7c3aed;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.job-description p {
+  color: #334155;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+.job-skills {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  border-top: 5px solid #06b6d4;
+}
+
+.job-skills h2 {
+  color: #0891b2;
+  margin-bottom: 15px;
+}
+
+/* Colorful Skill Tags */
+
+.skill-badge {
+  display: inline-block;
+  padding: 10px 16px;
+  margin: 6px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 700;
+  color: white;
+}
+
+.skill-badge:nth-child(2n) {
+  background: #2563eb;
+}
+
+.skill-badge:nth-child(3n) {
+  background: #10b981;
+}
+
+.skill-badge:nth-child(4n) {
+  background: #f59e0b;
+}
+
+.skill-badge:nth-child(5n) {
+  background: #ec4899;
+}
+
+.skill-badge:nth-child(6n) {
+  background: #8b5cf6;
+}
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.job-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.job-actions button {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+/* Back Button */
+
+.job-actions button:first-child {
+  background: linear-gradient(
+    135deg,
+    #64748b,
+    #475569
+  );
+  color: white;
+}
+
+.job-actions button:first-child:hover {
+  transform: translateY(-3px);
+}
+
+/* Apply Button */
+
+.job-actions button:last-child {
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #7c3aed
+  );
+  color: white;
+}
+
+.job-actions button:last-child:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 25px rgba(124,58,237,.35);
+}
+
+/* =========================
+   EXTRA HOVER EFFECTS
+========================= */
+
+.job-header:hover,
+.job-info:hover,
+.job-description:hover,
+.job-skills:hover {
+  transform: translateY(-4px);
+  transition: 0.3s ease;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  .job-details {
+    padding: 20px;
+  }
+
+  .job-header h1 {
+    font-size: 28px;
+  }
+
+  .job-info {
+    flex-direction: column;
+  }
+
+  .job-actions {
+    flex-direction: column;
+  }
+
+  .job-description,
+  .job-skills,
+  .job-header,
+  .job-info {
+    padding: 20px;
+  }
+}
