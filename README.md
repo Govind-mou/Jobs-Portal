@@ -1,0 +1,1 @@
+A modern Job Portal web application that connects job seekers with employers. Features include job listings, advanced search and filtering, user authentication, job applications, employer dashboards, and responsive design. Built with modern web technologies to provide a seamless recruitment experience for both candidates and recruiters.
